@@ -13,7 +13,7 @@ abstract class G2K_WPPS_Base {
         $this->_pluginSlug = $pluginSlug;
         $this->_pluginPath = $pluginPath;
 
-        $this->_register_hooks();
+        $this->register_hooks();
     }
 
     public function activate ($network_wide) {}
