@@ -25,7 +25,7 @@ class G2K_WPPS_Bootstrap {
             require_once static::_getFilePath('classes/plugin.php', $this->_pluginPath);
 
             $className = str_replace(' ', '_', $pluginName);
-            $GLOBALS[$pluginSlug] = new $className($this);
+            $GLOBALS[$pluginSlug] = new $className($pluginName, $pluginSlug, $pluginPath);
         } else {
             add_action('admin_notices', array($this, 'errorRequirements'));
         }
