@@ -60,9 +60,5 @@ abstract class G2K_WPPS_Plugin extends G2K_WPPS_Base {
         add_action('wpmu_new_blog', array($this, 'activate_new_site'));
 
         parent::register_hooks();
-
-        foreach ($this->_modules as $module) {
-            $module->register_hooks();
-        }
     }
 } 
